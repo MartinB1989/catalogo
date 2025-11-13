@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vajilla - Segunda Mano</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Vajilla de Segunda Mano</h1>
+        <p>Encuentra piezas únicas de calidad a precios accesibles</p>
+        <p>La vajilla es de segunda, esto quiere decir que las imperfecciones son mínimas y de excelente calidad, son de la marca CRMK, podés googlear y no vas a encontrar estos precios. Apto para HORNO y MICROONDAS</p>
+        <p>Podes pagar con TARJETA, EFECTIVO O TRANSFERENCIA</p>
+    </section>
+
+    <!-- Products Section -->
+    <div class="container">
+        <div id="productos-container" class="productos-grid">
+            <div class="loading">Cargando productos...</div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/productos.js"></script>
+    <script>
+        // Función para crear una card de producto
+        function crearProductoCard(producto) {
+            const card = document.createElement('div');
+            card.className = 'producto-card';
+
+            const precioHtml = typeof producto.precio === 'number'
+                ? `$${producto.precio.toFixed(2)}`
+                : producto.precio;
+
+            card.innerHTML = `
+                <div class="producto-imagen">
+                    <img src="${producto.imagen}" alt="${producto.nombre}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="producto-contenido">
+                    <h3 class="producto-nombre">${producto.nombre}</h3>
+                    <p class="producto-descripcion">${producto.descripcion}</p>
+                    <div class="producto-precio">${precioHtml}</div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        // Cargar productos cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('productos-container');
+            container.innerHTML = ''; // Limpiar el loading
+
+            productos.forEach(producto => {
+                const card = crearProductoCard(producto);
+                container.appendChild(card);
+            });
+        });
+    </script>
+</body>
+</html>
