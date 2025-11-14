@@ -25,23 +25,36 @@
     <!-- JavaScript -->
     <script src="js/productos.js"></script>
     <script>
-        // Obtener parámetro 'pc' de la URL
+        // Obtener parámetros de la URL
         const urlParams = new URLSearchParams(window.location.search);
         const usarPrecioAlCosto = urlParams.get('pc') === 'true';
+        const verPrecioRecomendado = urlParams.get('ver') === 'true';
 
         // Función para crear una card de producto
         function crearProductoCard(producto) {
             const card = document.createElement('div');
             card.className = 'producto-card';
 
-            // Seleccionar el precio basado en el parámetro 'pc'
-            const precioAMostrar = usarPrecioAlCosto ? producto.precioAlCosto : producto.precio;
+            // Seleccionar el precio basado en los parámetros 'pc' y 'ver'
+            let precioAMostrar;
+            if (usarPrecioAlCosto && verPrecioRecomendado) {
+                // Si pc=true y ver=true, mostrar precioRecomendado
+                precioAMostrar = producto.precioRecomendado;
+            } else if (usarPrecioAlCosto) {
+                // Si solo pc=true, mostrar precioAlCosto
+                precioAMostrar = producto.precioAlCosto;
+            } else {
+                // Si no, mostrar precio normal
+                precioAMostrar = producto.precio;
+            }
+
             const precioHtml = typeof precioAMostrar === 'number'
                 ? `$${precioAMostrar.toFixed(2)}`
                 : precioAMostrar;
 
             let precioRecomendadoSection = '';
-            if (usarPrecioAlCosto) {
+            // Solo mostrar la sección de precio recomendado si pc=true y ver NO es true
+            if (usarPrecioAlCosto && !verPrecioRecomendado) {
                 const precioRecomendadoHtml = typeof producto.precioRecomendado === 'number'
                     ? `$${producto.precioRecomendado.toFixed(2)}`
                     : producto.precioRecomendado;
