@@ -25,14 +25,20 @@
     <!-- JavaScript -->
     <script src="js/productos.js"></script>
     <script>
+        // Obtener parámetro 'pc' de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const usarPrecioAlCosto = urlParams.get('pc') === 'true';
+
         // Función para crear una card de producto
         function crearProductoCard(producto) {
             const card = document.createElement('div');
             card.className = 'producto-card';
 
-            const precioHtml = typeof producto.precio === 'number'
-                ? `$${producto.precio.toFixed(2)}`
-                : producto.precio;
+            // Seleccionar el precio basado en el parámetro 'pc'
+            const precioAMostrar = usarPrecioAlCosto ? producto.precioAlCosto : producto.precio;
+            const precioHtml = typeof precioAMostrar === 'number'
+                ? `$${precioAMostrar.toFixed(2)}`
+                : precioAMostrar;
 
             card.innerHTML = `
                 <div class="producto-imagen">
@@ -57,6 +63,14 @@
                 const card = crearProductoCard(producto);
                 container.appendChild(card);
             });
+
+            // Ocultar el botón de WhatsApp si el parámetro 'pc' existe y es 'true'
+            if (usarPrecioAlCosto) {
+                const whatsappButton = document.querySelector('.whatsapp-button');
+                if (whatsappButton) {
+                    whatsappButton.style.display = 'none';
+                }
+            }
         });
     </script>
 

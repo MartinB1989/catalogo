@@ -2,175 +2,204 @@ const productos = [
     {
         imagen: "img/bowl-blanco.jpg",
         nombre: "Bowl Blanco",
-        precio: 3000.00,
-        descripcion: ""
+        precio: 3500.00,
+        descripcion: "",
+        precioAlCosto: 3500.00,
     },
     {
         imagen: "img/jarro-pinguino-blanco.jpg",
         nombre: "Jarro Pingüino Blanco",
         precio: 5000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 5000.00,
     },
     {
         imagen: "img/plato-con-borde-jaspeado-blanco-26cm.jpg",
         nombre: "Plato con Borde Jaspeado Blanco 26cm",
         precio: 5000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3500.00,
     },
     {
         imagen: "img/plato-dot-21cm.jpg",
         nombre: "Plato Dot 21cm",
         precio: 2500.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 2500.00,
     },
     {
         imagen: "img/plato-dot-26cm-blanco.jpg",
         nombre: "Plato Dot 26cm Blanco",
         precio: 4000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-dot-26cm-celeste.jpg",
         nombre: "Plato Dot 26cm Celeste",
         precio: 4000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-dot-26cm-celeste-claro.jpg",
         nombre: "Plato Dot 26cm Celeste Claro",
         precio: 4000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-dot-26cm-gris.jpg",
         nombre: "Plato Dot 26cm Gris",
         precio: 4000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-dot-26cm-gris-claro.jpg",
         nombre: "Plato Dot 26cm Gris Claro",
         precio: 4000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-dot-26cm-rosa.jpg",
         nombre: "Plato Dot 26cm Rosa",
         precio: 4000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-dot-hondo-gris.jpg",
         nombre: "Plato Dot Hondo Gris",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-dot-hondo-rosa.jpg",
         nombre: "Plato Dot Hondo Rosa",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-hondo-borde-alto-gris-16cm.jpg",
         nombre: "Plato Hondo Borde Alto Gris 16cm",
         precio: 4000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-hondo-borde-alto-jaspeado-crema-16cm.jpg",
         nombre: "Plato Hondo Borde Alto Jaspeado Crema 16cm",
         precio: 4000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-hondo-borde-alto-negro-16cm.jpg",
         nombre: "Plato Hondo Borde Alto Negro 16cm",
         precio: 4000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-hondo-liso-gris.jpg",
         nombre: "Plato Hondo Liso Gris",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-hondo-verde-jaspeado.jpg",
         nombre: "Plato Hondo Verde Jaspeado",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/plato-postre-con-borde-21cm-blanco.jpg",
         nombre: "Plato Postre con Borde 21cm Blanco",
         precio: 2500.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 2500.00,
     },
     {
         imagen: "img/plato-postre-con-borde-21cm-crema.jpg",
         nombre: "Plato Postre con Borde 21cm Crema",
         precio: 2500.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 2500.00,
     },
     {
         imagen: "img/plato-postre-con-borde-21cm-negro.jpg",
         nombre: "Plato Postre con Borde 21cm Negro",
         precio: 2500.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 2500.00,
     },
     {
         imagen: "img/plato-postre-liso-gris-20cm.jpg",
         nombre: "Plato Postre Liso Gris 20cm",
         precio: 2500.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 2500.00,
     },
     {
         imagen: "img/taza-recta-amarilla.jpg",
         nombre: "Taza Recta Amarilla",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/taza-recta-blanca.jpg",
         nombre: "Taza Recta Blanca",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/taza-recta-celesta.jpg",
         nombre: "Taza Recta Celesta",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/taza-recta-rosa.jpg",
         nombre: "Taza Recta Rosa",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/taza-rescta-verde.jpg",
         nombre: "Taza Recta Verde",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/taza-tronco-de-cono-blanca.jpg",
-        nombre: "Taza Tronco de Cono Blanca",
+        nombre: "Taza Truncada Blanca",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/taza-truncada-base-con-radio.jpg",
         nombre: "Taza Truncada Base con Radio",
         precio: 3000.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     },
     {
         imagen: "img/tazon-negro.jpg",
         nombre: "Tazón Negro",
         precio: 3500.00,
-        descripcion: ""
+        descripcion: "",
+        precioAlCosto: 3000.00,
     }
 ];
