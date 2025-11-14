@@ -40,6 +40,14 @@
                 ? `$${precioAMostrar.toFixed(2)}`
                 : precioAMostrar;
 
+            let precioRecomendadoSection = '';
+            if (usarPrecioAlCosto) {
+                const precioRecomendadoHtml = typeof producto.precioRecomendado === 'number'
+                    ? `$${producto.precioRecomendado.toFixed(2)}`
+                    : producto.precioRecomendado;
+                precioRecomendadoSection = `<div class="producto-precio-recomendado">Precio recomendado: ${precioRecomendadoHtml}</div>`;
+            }
+
             card.innerHTML = `
                 <div class="producto-imagen">
                     <img src="${producto.imagen}" alt="${producto.nombre}" style="width: 100%; height: 100%; object-fit: cover;">
@@ -48,6 +56,7 @@
                     <h3 class="producto-nombre">${producto.nombre}</h3>
                     <p class="producto-descripcion">${producto.descripcion}</p>
                     <div class="producto-precio">${precioHtml}</div>
+                    ${precioRecomendadoSection}
                 </div>
             `;
 

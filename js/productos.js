@@ -5,6 +5,7 @@ const productos = [
         precio: 3500.00,
         descripcion: "",
         precioAlCosto: 3500.00,
+        precioRecomendado: 4500.00,
     },
     {
         imagen: "img/jarro-pinguino-blanco.jpg",
@@ -12,6 +13,7 @@ const productos = [
         precio: 5000.00,
         descripcion: "",
         precioAlCosto: 5000.00,
+        precioRecomendado: 6000.00,
     },
     {
         imagen: "img/plato-con-borde-jaspeado-blanco-26cm.jpg",
@@ -19,6 +21,7 @@ const productos = [
         precio: 5000.00,
         descripcion: "",
         precioAlCosto: 3500.00,
+        precioRecomendado: 4500.00,
     },
     {
         imagen: "img/plato-dot-21cm.jpg",
@@ -26,6 +29,7 @@ const productos = [
         precio: 2500.00,
         descripcion: "",
         precioAlCosto: 2500.00,
+        precioRecomendado: 3500.00,
     },
     {
         imagen: "img/plato-dot-26cm-blanco.jpg",
@@ -33,6 +37,7 @@ const productos = [
         precio: 4000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-dot-26cm-celeste.jpg",
@@ -40,6 +45,7 @@ const productos = [
         precio: 4000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-dot-26cm-celeste-claro.jpg",
@@ -47,6 +53,7 @@ const productos = [
         precio: 4000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-dot-26cm-gris.jpg",
@@ -54,6 +61,7 @@ const productos = [
         precio: 4000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-dot-26cm-gris-claro.jpg",
@@ -61,6 +69,7 @@ const productos = [
         precio: 4000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-dot-26cm-rosa.jpg",
@@ -68,6 +77,7 @@ const productos = [
         precio: 4000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-dot-hondo-gris.jpg",
@@ -75,6 +85,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-dot-hondo-rosa.jpg",
@@ -82,6 +93,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-hondo-borde-alto-gris-16cm.jpg",
@@ -89,6 +101,7 @@ const productos = [
         precio: 4000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-hondo-borde-alto-jaspeado-crema-16cm.jpg",
@@ -96,6 +109,7 @@ const productos = [
         precio: 4000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-hondo-borde-alto-negro-16cm.jpg",
@@ -103,6 +117,7 @@ const productos = [
         precio: 4000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-hondo-liso-gris.jpg",
@@ -110,6 +125,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-hondo-verde-jaspeado.jpg",
@@ -117,6 +133,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/plato-postre-con-borde-21cm-blanco.jpg",
@@ -124,6 +141,7 @@ const productos = [
         precio: 2500.00,
         descripcion: "",
         precioAlCosto: 2500.00,
+        precioRecomendado: 3500.00,
     },
     {
         imagen: "img/plato-postre-con-borde-21cm-crema.jpg",
@@ -131,6 +149,7 @@ const productos = [
         precio: 2500.00,
         descripcion: "",
         precioAlCosto: 2500.00,
+        precioRecomendado: 3500.00,
     },
     {
         imagen: "img/plato-postre-con-borde-21cm-negro.jpg",
@@ -138,6 +157,7 @@ const productos = [
         precio: 2500.00,
         descripcion: "",
         precioAlCosto: 2500.00,
+        precioRecomendado: 3500.00,
     },
     {
         imagen: "img/plato-postre-liso-gris-20cm.jpg",
@@ -145,6 +165,7 @@ const productos = [
         precio: 2500.00,
         descripcion: "",
         precioAlCosto: 2500.00,
+        precioRecomendado: 3500.00,
     },
     {
         imagen: "img/taza-recta-amarilla.jpg",
@@ -152,6 +173,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/taza-recta-blanca.jpg",
@@ -159,6 +181,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/taza-recta-celesta.jpg",
@@ -166,6 +189,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/taza-recta-rosa.jpg",
@@ -173,6 +197,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/taza-rescta-verde.jpg",
@@ -180,6 +205,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/taza-tronco-de-cono-blanca.jpg",
@@ -187,6 +213,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/taza-truncada-base-con-radio.jpg",
@@ -194,6 +221,7 @@ const productos = [
         precio: 3000.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     },
     {
         imagen: "img/tazon-negro.jpg",
@@ -201,5 +229,6 @@ const productos = [
         precio: 3500.00,
         descripcion: "",
         precioAlCosto: 3000.00,
+        precioRecomendado: 4000.00,
     }
 ];
